@@ -1,0 +1,76 @@
+body {
+/*    delete this later*/
+    min-height: 200vh;
+}
+
+.logo {
+    padding-left: 15px;
+}
+
+.thin-text {
+    font-weight: 300;
+}
+
+.parallax-container {
+      height: 100vh;
+    }
+
+.hero-img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, #311b92, #1a237e);
+  opacity: .8;
+}
+
+#about a:link,
+#about a:visited,
+#about a:focus {
+  color: #ef9a9a;
+}
+
+#about a:hover {
+  color: #e57373;
+}
+
+#about a:active {
+  color: #ffcdd2;
+}
+
+#work .card{
+  opacity: 0;
+}
+
+.card-image:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, #64ffda, #18ffff);
+  opacity: .7;
+}
+
+#skills .col {
+  padding: 20px 0;
+}
+
+.skill {
+  opacity: 0;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax img {
+    max-height: 130%; /* or a little bit higher */
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .parallax img {
+    max-height: 170%; /* or higher percentages. It's up to your taste */
+  }
+}
