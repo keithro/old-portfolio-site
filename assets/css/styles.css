@@ -40,6 +40,25 @@ body {
   color: #ffcdd2;
 }
 
+#portfolio-links {
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+#portfolio-links a:link,
+#portfolio-links a:visited,
+#portfolio-links a:focus {
+  color: #ffffff;
+}
+
+#portfolio-links a:hover {
+  color: #eeeeee;
+}
+
+#portfolio-links a:active {
+  color: #ffcdd2;
+}
+
 #work .card{
   opacity: 0;
 }
