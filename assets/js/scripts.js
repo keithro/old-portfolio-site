@@ -3,6 +3,13 @@ $(document).ready(function () {
     $(".button-collapse").sideNav();
 	$('#opener').tapTarget('open');
 	$('.tap-target').tapTarget('close');
+
+	window.onscroll = function() {
+		// viewport height  + # of pix scrolled   >= hight of the body
+		(window.innerHeight + window.pageYOffset) >= document.body.offsetHeight ? 
+		$('.fixed-action-btn').openFAB() : 
+		$('.fixed-action-btn').closeFAB();
+	};	
 });
 
 var options = [
@@ -75,14 +82,6 @@ var options = [
 	{selector: '#skill16', offset: 100, callback: function(el) {
 		Materialize.fadeInImage($(el))
 	} }
-
-	// ,
-	// {selector: '#connect', offset: -500, callback: function(el) {
-	// 	Materialize.addClass($(".fixed-action-btn"),'active')
-	// } }
-
-	// {selector: '#connect', offset: -700, callback: $(".fixed-action-btn").addClass('active') }
-
 ];
 Materialize.scrollFire(options);
 
