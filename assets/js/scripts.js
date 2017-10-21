@@ -85,6 +85,10 @@ var options = [
 ];
 Materialize.scrollFire(options);
 
+// For Formspree action
+var contactform =  document.getElementById('contactform');
+contactform.setAttribute('action', 'https://formspree.io/' + 'rodriguez.keith' + '@' + 'gmail' + '.' + 'com');
+
 // LINK SCROLL FIX
 (function(document, history, location) {
   var HISTORY_SUPPORT = !!(history && history.pushState);

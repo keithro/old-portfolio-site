@@ -281,37 +281,45 @@
                 <h3>Contact</h3>
             </div>
             <div class="row">
-                <form class="col s12">
+                <form class="col s12" id="contactform" method="POST">
                     <div class="row">
-                        <div class="input-field col s6">
-                            <input id="first_name" type="text" class="validate">
-                            <label for="first_name">First Name</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <input id="last_name" type="text" class="validate">
-                            <label for="last_name">Last Name</label>
+                        <div class="input-field col s12">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" name="name" class="validate">
                         </div>
                     </div>
                   
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="email" type="email" class="validate">
                             <label for="email">Email</label>
-                        </div>
-                    </div>
-                  
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <textarea id="textarea1" class="materialize-textarea"></textarea>
-                            <label for="textarea1">Textarea</label>
+                            <input id="email" type="email" name="_replyto" class="validate">
                         </div>
                     </div>
 
+                    <input type="hidden" name="_subject" value="Website contact" />
+                  
                     <div class="row">
                         <div class="input-field col s12">
-                            <button class="btn-large waves-effect waves-light red lighten-2" type="submit" name="action" onclick="Materialize.toast('Thanks for your email!', 4000, 'rounded')">Submit
+                            <label for="textarea1">Textarea</label>
+                            <textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
+                        </div>
+                    </div>
+
+                    <input type="text" name="_gotcha" style="display:none" />
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <!-- <button class="btn-large waves-effect waves-light red lighten-2" type="submit" name="action" onclick="Materialize.toast('Thanks for your email!', 4000, 'rounded')">Submit
                                 <i class="material-icons right">send</i>
-                            </button>
+                            </button> -->
+
+                            <input 
+                                type="submit"
+                                value="Submit"
+                                class="btn-large waves-effect waves-light red lighten-2" 
+                                name="action"
+                                onclick="Materialize.toast('Thanks for your email!', 4000, 'rounded')"
+                            >
                         </div>
                     </div>
                     
