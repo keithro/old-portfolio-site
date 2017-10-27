@@ -23,7 +23,7 @@ body {
   bottom: 0;
   left: 0;
   background-image: linear-gradient(to bottom, #311b92, #1a237e);
-  opacity: .8;
+  opacity: .7;
 }
 
 #about a:link,
@@ -38,6 +38,13 @@ body {
 
 #about a:active {
   color: #ffcdd2;
+}
+
+
+@media only screen and (max-width : 992px) {
+  .card .card-content {
+    padding: 42px;
+  }
 }
 
 #portfolio-links {
@@ -63,7 +70,7 @@ body {
   opacity: 0;
 }
 
-.card-image:after {
+/* .card-image:after {
   content: '';
   position: absolute;
   top: 0;
@@ -71,8 +78,8 @@ body {
   bottom: 0;
   left: 0;
   background-image: linear-gradient(to bottom, #64ffda, #18ffff);
-  opacity: .6;
-}
+  opacity: .3;
+} */
 
 #skills .col {
   padding: 20px 0;
