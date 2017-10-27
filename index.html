@@ -61,13 +61,13 @@
         <div class="parallax hero-img"><img src="assets/img/heropic.jpg"></div>
            <div class="container">
             <div class="row thin-text white-text">
-                <div class="col m4 s12 push-m8">
+                <div class="col m5 s12 push-m7">
                     <img class="circle responsive-img" src="assets/img/keith.jpg">
                 </div>
-                <div class="col m8 s12 pull-m4">
+                <div class="col m7 s12 pull-m5">
                     <h1>Hi, I'm Keith.</h1>
                     <div class="divider"></div>
-                    <h4>I am an aspiring developer.</h4>
+                    <h4>I am a web creator.</h4>
                 </div>
             </div>
         </div>
@@ -84,9 +84,9 @@
                 <div class="col m10 offset-m1">
                     <div class="card indigo darken-1">
                         <div class="card-content white-text">
-                            <p class="flow-text grey-text text-lighten-4">I am a former accountant turned developer. I love to create things that provide and wondeful experience. You can see what I've been up to at:
+                            <p class="flow-text grey-text text-lighten-4">I am a former accountant turned developer. I love to create things that provide and wondeful user experience. You can see what I've been up to at:
                             <div class="container">
-                                <div class="row center-align" id="portfolio-links">
+                                <div class="row center-align" id="about-links">
                                     <div class="col s4">
                                         <a target="blank" href="https://github.com/keithro"><i class="fa fa-github medium" aria-hidden="true"></i></a>
                                     </div>
@@ -285,48 +285,53 @@
                 <h3>Contact</h3>
             </div>
             <div class="row">
-                <form class="col s12" id="contactform" method="POST">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <label for="name">Name</label>
-                            <input id="name" type="text" name="name" class="validate">
-                        </div>
+    
+                <div class="col m10 offset-m1">
+                    <div class="card-panel deep-purple darken-3 white-text">
+                        <div class="row">
+                            <h5 class="center-align">Want to get in touch? Shoot me an email.</h5>
+                            <p class="center-align">(I'd love to hear from you)</p>
+                            <form class="card-content col s12" id="contactform" method="POST">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <label for="name">Name</label>
+                                        <input id="name" type="text" name="name" class="validate">
+                                    </div>
+                                </div>
+        
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <label for="email">Email</label>
+                                        <input id="email" type="email" name="_replyto" class="validate">
+                                    </div>
+                                </div>
+        
+                                <input type="hidden" name="_subject" value="Website contact" />
+        
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <label for="textarea1">Textarea</label>
+                                        <textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
+                                    </div>
+                                </div>
+        
+                                <input type="text" name="_gotcha" style="display:none" />
+        
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <!-- <button class="btn-large waves-effect waves-light red lighten-2" type="submit" name="action" onclick="Materialize.toast('Thanks for your email!', 4000, 'rounded')">Submit
+                                                        <i class="material-icons right">send</i>
+                                                    </button> -->
+                                        <input type="submit" value="Submit" class="btn-large waves-effect waves-light red lighten-2" name="action" onclick="Materialize.toast('Thanks for your email!', 4000, 'rounded')">
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </form>
                     </div>
-                  
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <label for="email">Email</label>
-                            <input id="email" type="email" name="_replyto" class="validate">
-                        </div>
-                    </div>
-
-                    <input type="hidden" name="_subject" value="Website contact" />
-                  
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <label for="textarea1">Textarea</label>
-                            <textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
-                        </div>
-                    </div>
-
-                    <input type="text" name="_gotcha" style="display:none" />
-
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <!-- <button class="btn-large waves-effect waves-light red lighten-2" type="submit" name="action" onclick="Materialize.toast('Thanks for your email!', 4000, 'rounded')">Submit
-                                <i class="material-icons right">send</i>
-                            </button> -->
-                            <input 
-                                type="submit"
-                                value="Submit"
-                                class="btn-large waves-effect waves-light red lighten-2" 
-                                name="action"
-                                onclick="Materialize.toast('Thanks for your email!', 4000, 'rounded')"
-                            >
-                        </div>
-                    </div>
-                    
-                </form>
+                </div>
+    
+    
             </div>
         </div>
     </div>

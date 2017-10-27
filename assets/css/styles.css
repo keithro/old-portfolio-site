@@ -26,60 +26,43 @@ body {
   opacity: .7;
 }
 
-#about a:link,
-#about a:visited,
-#about a:focus {
-  color: #ef9a9a;
-}
-
-#about a:hover {
-  color: #e57373;
-}
-
-#about a:active {
-  color: #ffcdd2;
-}
-
-
-@media only screen and (max-width : 992px) {
-  .card .card-content {
-    padding: 42px;
-  }
-}
-
-#portfolio-links {
-  margin-bottom: 0;
-  padding-top: 10px;
-}
-
-#portfolio-links a:link,
-#portfolio-links a:visited,
-#portfolio-links a:focus {
+#about-links a {
   color: #ffffff;
 }
 
-#portfolio-links a:hover {
-  color: #eeeeee;
+/* #about-links a:visited, */
+#about-links a:focus {
+  color: #ffcdd2;
 }
 
-#portfolio-links a:active {
-  color: #ffcdd2;
+#about-links a:hover {
+  color: #ef9a9a;
+}
+
+#about-links a:active {
+  color: #e57373;
+}
+
+/* .card .card-content {
+  padding: px;
+} */
+
+@media only screen and (min-width : 992px) {
+  .card .card-content {
+    padding: 42px;
+  }
+  .card .card-content p {
+    margin: 0 0 24px 0;
+  }
+}
+
+#about-links {
+  margin-top: 20px;
 }
 
 #work .card{
   opacity: 0;
 }
-
-/* .card-image:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom, #64ffda, #18ffff);
-  opacity: .3;
-} */
 
 #skills .col {
   padding: 20px 0;
