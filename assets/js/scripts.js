@@ -13,24 +13,36 @@ $(document).ready(function () {
 });
 
 var options = [
-	{selector: '#card1', offset: 100, callback: function(el) {
-		Materialize.fadeInImage($(el))
-	} },
-	{selector: '#card2', offset: 120, callback: function(el) {
-		Materialize.fadeInImage($(el))
-	} },
-	{selector: '#card3', offset: 140, callback: function(el) {
-		Materialize.fadeInImage($(el))
-	} },
-	{selector: '#card4', offset: 160, callback: function(el) {
-		Materialize.fadeInImage($(el))
-	} },
-	{selector: '#card5', offset: 180, callback: function(el) {
-		Materialize.fadeInImage($(el))
-	} },
-	{selector: '#card6', offset: 200, callback: function(el) {
-		Materialize.fadeInImage($(el))
-	} },
+	{
+		selector: '#card1', offset: 200, callback: function (el) {
+			Materialize.fadeInImage($(el))
+		}
+	},
+	{
+		selector: '#card2', offset: 200, callback: function (el) {
+			Materialize.fadeInImage($(el))
+		}
+	},
+	{
+		selector: '#card3', offset: 200, callback: function (el) {
+			Materialize.fadeInImage($(el))
+		}
+	},
+	{
+		selector: '#card4', offset: 200, callback: function (el) {
+			Materialize.fadeInImage($(el))
+		}
+	},
+	{
+		selector: '#card5', offset: 200, callback: function (el) {
+			Materialize.fadeInImage($(el))
+		}
+	},
+	{
+		selector: '#card6', offset: 200, callback: function (el) {
+			Materialize.fadeInImage($(el))
+		}
+	},
 	// ==========
 	//   skills
 	// ==========
