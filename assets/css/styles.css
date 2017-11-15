@@ -25,7 +25,7 @@
   opacity: .4;
 }
 
-#about {
+/* #about {
   position: relative;
 }
 
@@ -50,23 +50,19 @@
 
 .info-card {
   margin-bottom: -80px;
-}
+} */
 
 #about-links a {
   color: #ffffff;
 }
 
-/* #about-links a:visited, */
-#about-links a:focus {
+#about-links a:focus,
+#about-links a:hover {
   color: #ffcdd2;
 }
 
-#about-links a:hover {
-  color: #ef9a9a;
-}
-
 #about-links a:active {
-  color: #e57373;
+  color: #ef9a9a;
 }
 
 @media only screen and (min-width : 993px) {
@@ -82,9 +78,9 @@
   margin-top: 20px;
 }
 
-#work {
+/* #work {
   margin-top: 60px;
-}
+} */
 
 #work .card{
   opacity: 0;
@@ -104,6 +100,8 @@
   }
 }
 /* 
+Might need to add back when you optomize images
+
 @media only screen and (max-width : 992px) {
   .parallax img {
     max-height: 130%;
