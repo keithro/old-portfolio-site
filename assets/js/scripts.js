@@ -43,6 +43,36 @@ var options = [
 			Materialize.fadeInImage($(el))
 		}
 	},
+	{
+		selector: '#card7', offset: 200, callback: function (el) {
+			Materialize.fadeInImage($(el))
+		}
+	},
+	{
+		selector: '#card8', offset: 200, callback: function (el) {
+			Materialize.fadeInImage($(el))
+		}
+	},
+	{
+		selector: '#card9', offset: 200, callback: function (el) {
+			Materialize.fadeInImage($(el))
+		}
+	},
+	{
+		selector: '#card10', offset: 200, callback: function (el) {
+			Materialize.fadeInImage($(el))
+		}
+	},
+	{
+		selector: '#card11', offset: 200, callback: function (el) {
+			Materialize.fadeInImage($(el))
+		}
+	},
+	{
+		selector: '#card12', offset: 200, callback: function (el) {
+			Materialize.fadeInImage($(el))
+		}
+	},
 	// ==========
 	//   skills
 	// ==========
